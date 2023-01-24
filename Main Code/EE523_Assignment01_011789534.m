@@ -5,9 +5,15 @@ clc;
 clear all;
 close all;
 
+%% Adding Folder Path
+Data_Path = [fileparts(pwd),'/Data'];
+addpath(Data_Path);
+
+Function_Path = [fileparts(pwd),'/Functions'];
+addpath(Function_Path);
 
 %% Setting Up The Input Data As Per Assignment
-Problem = 'C';
+Problem = 'A';
 if Problem == 'A'
     Excel_Worksheet = 'Problem_A';
 elseif Problem == 'B'
